@@ -110,8 +110,8 @@ export default class Facebook extends Component {
         className='fb-video'
         data-href={this.props.url}
         data-autoplay={this.props.playing ? 'true' : 'false'}
-        data-allowfullscreen='true'
-        data-controls={this.props.controls ? 'true' : 'false'}
+        data-allowfullscreen={this.props.allowfullscreen === false ? 'false' : 'true' }
+        data-controls={this.props.controls   ? 'true' : 'false'}
       />
     )
   }
